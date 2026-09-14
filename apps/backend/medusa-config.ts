@@ -48,6 +48,8 @@ module.exports = defineConfig({
               endpoint: process.env.S3_ENDPOINT,
               additional_client_config: {
                 forcePathStyle: true,
+                requestChecksumCalculation: "WHEN_REQUIRED",
+                responseChecksumValidation: "WHEN_REQUIRED",
               },
             },
           },
